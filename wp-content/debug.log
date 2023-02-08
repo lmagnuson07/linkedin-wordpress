@@ -1,0 +1,87 @@
+[08-Feb-2023 02:07:44 UTC] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:07:44 UTC] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:08:18 UTC] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:08:18 UTC] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:09:06 UTC] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:09:06 UTC] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:16:02 UTC] PHP Warning:  copy(): SSL: An existing connection was forcibly closed by the remote host in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\child-theme-wizard\child-theme-wizard.php on line 359
+[08-Feb-2023 02:16:02 UTC] PHP Notice:  copy(): Send of 128 bytes failed with errno=10054 An existing connection was forcibly closed by the remote host in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\child-theme-wizard\child-theme-wizard.php on line 359
+[08-Feb-2023 02:16:02 UTC] PHP Warning:  copy(https://linkedin-wordpress.local/wp-content/plugins/child-theme-wizard/images/screenshot.png): Failed to open stream: HTTP request failed! in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\child-theme-wizard\child-theme-wizard.php on line 359
+[08-Feb-2023 02:18:18 UTC] PHP Warning:  copy(): SSL: An existing connection was forcibly closed by the remote host in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\child-theme-wizard\child-theme-wizard.php on line 359
+[08-Feb-2023 02:18:18 UTC] PHP Notice:  copy(): Send of 128 bytes failed with errno=10054 An existing connection was forcibly closed by the remote host in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\child-theme-wizard\child-theme-wizard.php on line 359
+[08-Feb-2023 02:18:18 UTC] PHP Warning:  copy(https://linkedin-wordpress.local/wp-content/plugins/child-theme-wizard/images/screenshot.png): Failed to open stream: HTTP request failed! in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\child-theme-wizard\child-theme-wizard.php on line 359
+[08-Feb-2023 02:21:56 UTC] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:21:56 UTC] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:21:59 UTC] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:21:59 UTC] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\functions.php on line 5393
+[08-Feb-2023 02:28:30 UTC] PHP Fatal error:  Declaration of Automattic_Developer_Empty_Upgrader_Skin::feedback($string) must be compatible with WP_Upgrader_Skin::feedback($feedback, ...$args) in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\developer\includes\class-empty-upgrader-skin.php on line 26
+[08-Feb-2023 02:28:36 UTC] PHP Fatal error:  Declaration of Automattic_Developer_Empty_Upgrader_Skin::feedback($string) must be compatible with WP_Upgrader_Skin::feedback($feedback, ...$args) in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\developer\includes\class-empty-upgrader-skin.php on line 26
+[08-Feb-2023 02:30:45 UTC] PHP Fatal error:  Declaration of Automattic_Developer_Empty_Upgrader_Skin::feedback($string) must be compatible with WP_Upgrader_Skin::feedback($feedback, ...$args) in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\developer\includes\class-empty-upgrader-skin.php on line 26
+[08-Feb-2023 02:35:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(661): plugin_sandbox_scrape('debug-bar-exten...')
+#4 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(58): activate_plugin('debug-bar-exten...', 'http://localhos...', false)
+#5 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 02:35:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(192): plugin_sandbox_scrape('debug-bar-exten...')
+#4 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 02:35:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(192): plugin_sandbox_scrape('debug-bar-exten...')
+#4 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 02:35:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(661): plugin_sandbox_scrape('debug-bar-exten...')
+#4 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\developer\developer.php(429): activate_plugin('debug-bar-exten...')
+#5 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php(308): Automattic_Developer->ajax_handler('a8c_developer_a...')
+#6 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_a8c_dev...')
+#9 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 02:35:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(661): plugin_sandbox_scrape('debug-bar-exten...')
+#4 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(58): activate_plugin('debug-bar-exten...', 'http://localhos...', false)
+#5 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 02:35:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(192): plugin_sandbox_scrape('debug-bar-exten...')
+#4 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 02:35:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php:222
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(121): Debug_Bar_Extender->prepare_debug_menu()
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php(758): Debug_Bar_Extender::init()
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(2314): include_once('C:\\Users\\logma\\...')
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(192): plugin_sandbox_scrape('debug-bar-exten...')
+#4 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-content\plugins\debug-bar-extender\debug-bar-extender.php on line 222
+[08-Feb-2023 03:18:02 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wpdb.php on line 1775
+[08-Feb-2023 03:20:51 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wpdb.php on line 1775
+[08-Feb-2023 03:20:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port).
+[08-Feb-2023 03:20:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port).
+[08-Feb-2023 03:20:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port).

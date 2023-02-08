@@ -1,0 +1,17 @@
+{
+    "name": "logma/public",
+    "autoload": {
+        "psr-4": {
+            "Logma\\Public\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lmagnuson07",
+            "email": "logmagns07@gmail.com"
+        }
+    ],
+    "require" : {
+
+    }
+}
