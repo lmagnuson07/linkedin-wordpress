@@ -85,3 +85,25 @@ Stack trace:
 [08-Feb-2023 03:20:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port).
 [08-Feb-2023 03:20:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port).
 [08-Feb-2023 03:20:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (fallback through xdebug.client_host/xdebug.client_port).
+[08-Feb-2023 04:55:54 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "myplugin_on_activation" not found or invalid function name in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\includes\plugin.php(691): do_action('activate_activa...', false)
+#3 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(58): activate_plugin('activate-deacti...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php on line 308
+[08-Feb-2023 04:55:54 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "myplugin_on_activation" not found or invalid function name in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(194): do_action('activate_activa...')
+#3 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php on line 308
+[08-Feb-2023 04:55:55 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "myplugin_on_activation" not found or invalid function name in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#1 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-admin\plugins.php(194): do_action('activate_activa...')
+#3 {main}
+  thrown in C:\Users\logma\Local Sites\linkedin-wordpress\app\public\wp-includes\class-wp-hook.php on line 308
