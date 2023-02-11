@@ -20,6 +20,8 @@ if ( is_singular( 'post' ) && get_theme_mod( 'web_blog_enable_related_post_secti
 	$args           = array(
 		'cat'            => $cat_content_id,
 		'posts_per_page' => absint( 4 ),
+		'post__not_in'   => array( $post->ID ),
+		'orderby'        => 'rand',
 	);
 
 	$query = new WP_Query( $args );
@@ -84,12 +86,12 @@ if ( is_singular( 'post' ) && get_theme_mod( 'web_blog_enable_related_post_secti
 </div>
 </div><!-- #content -->
 
-	<?php
-	if ( is_front_page() ) {
+<?php
+if ( is_front_page() ) {
 
-		require get_template_directory() . '/inc/frontpage-sections/posts-carousel.php';
+	require get_template_directory() . '/inc/frontpage-sections/posts-carousel.php';
 
-	}
+}
 }
 
 ?>
@@ -108,26 +110,26 @@ if ( is_singular( 'post' ) && get_theme_mod( 'web_blog_enable_related_post_secti
 			</div>
 		</div>
 	</div>
-	<?php endif; ?>
-	<?php
-	$web_blog_search   = array( '[the-year]', '[site-link]' );
-	$replace           = array( date( 'Y' ), '<a href="' . esc_url( home_url( '/' ) ) . '">' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '</a>' );
-	$copyright_default = sprintf( esc_html_x( 'Copyright &copy; %1$s %2$s', '1: Year, 2: Site Title with home URL', 'web-blog' ), '[the-year]', '[site-link]' );
-	$copyright_text    = get_theme_mod( 'web_blog_copyright_txt', $copyright_default );
-	$copyright_text    = str_replace( $web_blog_search, $replace, $copyright_text );
-	?>
-	<div class="bottom-footer">
-		<div class="theme-wrapper">
-			<div class="bottom-footer-info">
-					<div class="site-info">
-						<span>
-							<?php echo wp_kses_post( $copyright_text ); ?>
-							<?php echo sprintf( esc_html__( 'Theme: %1$s By %2$s.', 'web-blog' ), wp_get_theme()->get( 'Name' ), '<a href="' . wp_get_theme()->get( 'AuthorURI' ) . '">' . wp_get_theme()->get( 'Author' ) . '</a>' ); ?>
-						</span>	
-					</div><!-- .site-info -->
-			</div>
+<?php endif; ?>
+<?php
+$web_blog_search   = array( '[the-year]', '[site-link]' );
+$replace           = array( date( 'Y' ), '<a href="' . esc_url( home_url( '/' ) ) . '">' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '</a>' );
+$copyright_default = sprintf( esc_html_x( 'Copyright &copy; %1$s %2$s', '1: Year, 2: Site Title with home URL', 'web-blog' ), '[the-year]', '[site-link]' );
+$copyright_text    = get_theme_mod( 'web_blog_copyright_txt', $copyright_default );
+$copyright_text    = str_replace( $web_blog_search, $replace, $copyright_text );
+?>
+<div class="bottom-footer">
+	<div class="theme-wrapper">
+		<div class="bottom-footer-info">
+			<div class="site-info">
+				<span>
+					<?php echo wp_kses_post( $copyright_text ); ?>
+					<?php echo sprintf( esc_html__( 'Theme: %1$s By %2$s.', 'web-blog' ), wp_get_theme()->get( 'Name' ), '<a href="' . wp_get_theme()->get( 'AuthorURI' ) . '">' . wp_get_theme()->get( 'Author' ) . '</a>' ); ?>
+				</span>	
+			</div><!-- .site-info -->
 		</div>
 	</div>
+</div>
 </footer><!-- #colophon -->
 
 <?php if ( get_theme_mod( 'web_blog_enable_scroll_to_top', true ) === true ) : ?>

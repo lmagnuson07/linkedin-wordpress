@@ -4,7 +4,7 @@ Theme URI: https://adorethemes.com/downloads/web-blog/
 Author: Adore Themes
 Author URI: https://adorethemes.com/
 Description: Web Blog theme is a minimal, lightweight and customizer based WordPress theme for creating beautiful fast loading and accessible websites and also a new generation clean design blog theme. This theme is perfect for a fashion blog, lifestyle blog, travel blog, food blog, photography blog, and many more. It is designed and developed primarily to create professional blogging websites. It is a simple, easy-to-use, modern and creative, user-friendly WordPress theme. It’s ideal for all personal or professional lifestyle bloggers who are looking for stylish designs for their websites. Web Blog is mobile-friendly, cross-browser compatible. Regardless of the different mobile devices, computers, and screen sizes, it looks great on all of them. We can also use the theme to create blogs in any language because it is translation-ready. Overall, Web Blog offers almost everything required to build a unique and engaging blog website. Live preview : https://demo.adorethemes.com/web-blog/
-Version: 1.0.1
+Version: 1.0.2
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 6.1
@@ -3571,18 +3571,8 @@ textarea {
 	margin: 5px;
 }
 
-@media (max-width: 768px) {
-
-	.categories-section .categories-wrapper .category-single {
-		height: 200px;
-	}
-}
 
 @media (max-width: 600px) {
-
-	.categories-section .categories-wrapper .category-single {
-		height: 220px;
-	}
 
 	.categories-section .categories-wrapper .category-single>a span {
 		font-size: calc(var(--font-size-base) - 2px);
