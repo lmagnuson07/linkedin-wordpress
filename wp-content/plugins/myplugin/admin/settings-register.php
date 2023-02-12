@@ -37,6 +37,7 @@ function myplugin_register_settings() {
     ///////////// Settings fields ///////////////////////////////////////
     // "page" must match the menu slug from add_submenu_page
     // "section" must match the settings section id
+    // "title" is the label that appears to the left of the input
     add_settings_field(
         'custom_url',
         'Custom URL',
