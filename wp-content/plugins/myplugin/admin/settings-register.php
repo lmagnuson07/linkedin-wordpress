@@ -12,10 +12,13 @@ function myplugin_register_settings() {
 
     ////////////// Register our options ///////////////////////////////
     // must match a settings fields option_group
+    $registerArgs = array(
+        'sanitize_callback' => 'myplugin_callback_validate_options'
+    );
     register_setting(
         'myplugin_options',
         'myplugin_options',
-        'myplugin_callback_validate_options'
+        $registerArgs
     );
 
     ////////////// Setting sections ////////////////////////////////////
