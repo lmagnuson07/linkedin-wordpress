@@ -7,8 +7,6 @@
 
 */
 
-
-
 // exit if uninstall constant is not defined. Protects against direct access.
 // will be defined during the uninstall.php invocation
 // is not defined when register_uninstall_hook is used.
