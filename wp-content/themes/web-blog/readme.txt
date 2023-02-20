@@ -4,7 +4,7 @@ Contributors: adorethemes
 Tags: custom-background, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, right-sidebar, blog, one-column, portfolio, photography, theme-options, threaded-comments, translation-ready
 Requires at least: 5.0
 Tested up to: 6.1
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 Requires PHP: 5.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -87,6 +87,14 @@ License URL: https://stocksnap.io/license
 Source: https://stocksnap.io/photo/roadtrip-usa-1NSWGNVTL1
 
 == Changelog ==
+
+= 1.1.0 - February 16 2023 =
+* Added random posts icon on topbar
+* Updated screenshot
+
+= 1.0.2 - February 10 2023 =
+* Fixed category section responsive issues
+* Added parameters in related posts section query
 
 = 1.0.1 - January 01 2023 =
 * Fixed issues listed by themetracbot

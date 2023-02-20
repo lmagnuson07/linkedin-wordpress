@@ -50,74 +50,95 @@
 									<?php
 									if ( is_front_page() && is_home() ) :
 										?>
-										<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-										<?php
-										else :
-											?>
-											<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-											<?php
-										endif;
+									<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+									<?php
+								else :
+									?>
+									<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+									<?php
+								endif;
 
-										$web_blog_description = get_bloginfo( 'description', 'display' );
-										if ( $web_blog_description || is_customize_preview() ) :
-											?>
-											<p class="site-description"><?php echo $web_blog_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-											<?php
-										endif;
-										?>
-								</div>
-							<?php } ?>
-						</div><!-- .site-branding -->
-					</div>
+								$web_blog_description = get_bloginfo( 'description', 'display' );
+								if ( $web_blog_description || is_customize_preview() ) :
+									?>
+									<p class="site-description"><?php echo $web_blog_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+									<?php
+								endif;
+								?>
+							</div>
+						<?php } ?>
+					</div><!-- .site-branding -->
 				</div>
 			</div>
-			<div class="header-outer-wrapper">
-				<div class="adore-header">
-					<div class="theme-wrapper">
-						<div class="header-wrapper">
-							<div class="header-nav-search">
-								<div class="header-navigation">
-									<nav id="site-navigation" class="main-navigation">
-										<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-											<span></span>
-											<span></span>
-											<span></span>
-										</button>
-										<?php
-										if ( has_nav_menu( 'primary' ) ) {
-											wp_nav_menu(
-												array(
-													'theme_location' => 'primary',
-													'menu_id'        => 'primary-menu',
-												)
-											);
-										}
-										?>
-									</nav><!-- #site-navigation -->
-								</div>
-								<div class="header-end">
-									<div class="social-icons">
-										<?php
-										if ( has_nav_menu( 'social' ) ) {
-											wp_nav_menu(
-												array(
-													'menu_class'  => 'menu social-links',
-													'link_before' => '<span class="screen-reader-text">',
-													'link_after'  => '</span>',
-													'theme_location' => 'social',
-												)
-											);
-										}
-										?>
-									</div>
-									<div class="navigation-search">
-										<div class="navigation-search-wrap">
-											<a href="#" title="Search" class="navigation-search-icon">
-												<i class="fa fa-search"></i>
+		</div>
+		<div class="header-outer-wrapper">
+			<div class="adore-header">
+				<div class="theme-wrapper">
+					<div class="header-wrapper">
+						<div class="header-nav-search">
+							<div class="header-navigation">
+								<nav id="site-navigation" class="main-navigation">
+									<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+										<span></span>
+										<span></span>
+										<span></span>
+									</button>
+									<?php
+									if ( has_nav_menu( 'primary' ) ) {
+										wp_nav_menu(
+											array(
+												'theme_location' => 'primary',
+												'menu_id'        => 'primary-menu',
+											)
+										);
+									}
+									?>
+								</nav><!-- #site-navigation -->
+							</div>
+							<div class="header-end">
+								<div class="display-random-post">
+									<?php
+									$args              = array(
+										'posts_per_page'      => 1,
+										'post_type'           => 'post',
+										'ignore_sticky_posts' => true,
+										'orderby'             => 'rand',
+									);
+									$random_query = new WP_Query( $args );
+									if ( $random_query->have_posts() ) {
+										while ( $random_query->have_posts() ) :
+											$random_query->the_post();
+											?>
+											<a href="<?php the_permalink(); ?>" title="<?php esc_attr_e( 'View Random Post', 'web-blog' ); ?>">
+												<i class="fas fa-random"></i>
 											</a>
-											<div class="navigation-search-form">
-												<?php get_search_form(); ?>
-											</div>
+											<?php
+										endwhile;
+										wp_reset_postdata();
+									}
+									?>
+								</div>
+								<div class="social-icons">
+									<?php
+									if ( has_nav_menu( 'social' ) ) {
+										wp_nav_menu(
+											array(
+												'menu_class'  => 'menu social-links',
+												'link_before' => '<span class="screen-reader-text">',
+												'link_after'  => '</span>',
+												'theme_location' => 'social',
+											)
+										);
+									}
+									?>
+								</div>
+								<div class="navigation-search">
+									<div class="navigation-search-wrap">
+										<a href="#" title="Search" class="navigation-search-icon">
+											<i class="fa fa-search"></i>
+										</a>
+										<div class="navigation-search-form">
+											<?php get_search_form(); ?>
 										</div>
 									</div>
 								</div>
@@ -126,19 +147,20 @@
 					</div>
 				</div>
 			</div>
-		</header><!-- #masthead -->
+		</div>
+	</header><!-- #masthead -->
 
-		<div id="primary-content" class="primary-site-content">
+	<div id="primary-content" class="primary-site-content">
 
-			<?php
-			if ( is_front_page() ) {
-				require get_template_directory() . '/inc/frontpage-sections/categories.php';
-			}
+		<?php
+		if ( is_front_page() ) {
+			require get_template_directory() . '/inc/frontpage-sections/categories.php';
+		}
 
-			if ( ! is_front_page() || is_home() ) {
-				?>
+		if ( ! is_front_page() || is_home() ) {
+			?>
 
-				<div id="content" class="site-content theme-wrapper">
-					<div class="theme-wrap">
+			<div id="content" class="site-content theme-wrapper">
+				<div class="theme-wrap">
 
-					<?php } ?>
+				<?php } ?>
