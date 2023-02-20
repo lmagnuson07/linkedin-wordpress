@@ -22,6 +22,7 @@
             // submit the
             // for ajax in the admin area, the ajaxurl is defined automatically.
             // see the head. Does not get added to public facing pages.
+            // Wordpress uses the nonce and cookie data to authenticate the user to make a post request
             $.post(ajaxurl, {
 
                 nonce:  ajax_admin.nonce,
